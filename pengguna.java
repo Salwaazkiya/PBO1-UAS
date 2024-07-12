@@ -1,4 +1,4 @@
-public class pengguna {
+public class Pengguna {
     private int id;
     private String username;
     private String password;
@@ -40,5 +40,9 @@ public class pengguna {
 
     public void setPassword(String password){
         this.password = password;
+    }
+
+    public Pengguna(){
+        System.out.println("Object telah diciptakan, constructor berjalan");
     }
 }
