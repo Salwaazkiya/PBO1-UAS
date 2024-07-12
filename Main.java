@@ -4,5 +4,6 @@ public class Main {
         String variabelString;
         Pengguna pengguna = new Pengguna();
         Buku buku = new Buku();
+        Mobil mobil = new Mobil();
     }
 }
