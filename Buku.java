@@ -3,7 +3,8 @@ public class Buku {
     private String judul;
     private String penulis;
     private int jumlah_halaman;
-    private String harga;
+    private double harga;  // Mengubah tipe data harga menjadi double agar sesuai dengan metode kenaikan harga
+
 
     public int getId() {
         return this.id;
@@ -21,7 +22,7 @@ public class Buku {
         return this.jumlah_halaman;
     }
 
-    public String getHarga() {
+    public double getHarga() {  // Mengubah tipe data harga menjadi double
         return this.harga;
     }
 
@@ -41,11 +42,22 @@ public class Buku {
         this.jumlah_halaman = jumlah_halaman;
     }
 
-    public void setHarga(String harga) {
+    public void setHarga(double harga) {  // Mengubah tipe data harga menjadi double
         this.harga = harga;
     }
 
     public Buku() {
         System.out.println("Objek Buku telah diciptakan, constructor berjalan");
     }
+
+    public void naikkanHarga() {
+        this.harga += 1000; 
+        System.out.println("Harga naik sebesar 1000, harga baru: " + this.harga);
+    }
+
+    public void naikkanHarga(double kenaikan) {
+        this.harga += kenaikan;
+        System.out.println("Harga naik sebesar " + kenaikan + ", harga baru: " + this.harga);
+    }
+
 }
